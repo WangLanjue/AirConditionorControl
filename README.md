@@ -1,0 +1,2 @@
+# AirConditionorControl
+实验室学长做了一个PLC控制板控制新风系统共0123四个档位，搭载wifi模块，同时使用另一台PLC设备充当主机控制器，搭载多个传感器实时收集数据。设备采用UDP通讯ModBus协议。
