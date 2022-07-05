@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:focusableInTouchMode="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_settings_installationid"
+        android:title="@string/action_settings_installationid"
+        android:focusableInTouchMode="false"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_settings_room"
+        android:title="@string/action_settings_room"
+        android:focusableInTouchMode="false"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_settings_mode"
+        android:title="@string/action_settings_mode"
+        android:focusableInTouchMode="false"
+        app:showAsAction="never" />
+
+</menu>

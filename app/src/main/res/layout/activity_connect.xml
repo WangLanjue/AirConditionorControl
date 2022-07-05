@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectActivity">
+
+    <View
+        android:id="@+id/connect_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/view_stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <TextView
+        android:id="@+id/text_wifi_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="手持器ip地址："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/connect_view"
+        app:layout_constraintEnd_toEndOf="@id/connect_view"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@id/connect_view"
+        app:layout_constraintTop_toTopOf="@id/connect_view"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/text_wifi_ip_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/text_circle"
+        android:gravity="center"
+        android:selectAllOnFocus="true"
+        android:textColor="#111010"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_wifi_ip"
+        app:layout_constraintEnd_toEndOf="@id/connect_view"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/text_wifi_ip"
+        app:layout_constraintTop_toTopOf="@+id/text_wifi_ip"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="192.107.4.1" />
+
+
+    <TextView
+        android:id="@+id/text_local_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="本地wifi名称："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/text_wifi_ip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_wifi_ip"
+        app:layout_constraintTop_toBottomOf="@+id/text_wifi_ip"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/text_local_wifi_name_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:textColor="#111010"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@drawable/text_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/text_local_wifi_name"
+        app:layout_constraintEnd_toEndOf="@+id/text_wifi_ip_data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_wifi_ip_data"
+        app:layout_constraintTop_toTopOf="@+id/text_local_wifi_name"
+        tools:text="HDV" />
+
+    <TextView
+        android:id="@+id/text_local_wifi_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="本地wifi密码："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/text_local_wifi_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_local_wifi_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_local_wifi_name"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/text_local_wifi_password_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#111010"
+        android:textSize="20sp"
+        android:selectAllOnFocus="true"
+        android:background="@drawable/text_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/text_local_wifi_password"
+        app:layout_constraintEnd_toEndOf="@+id/text_local_wifi_name_data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_local_wifi_name_data"
+        app:layout_constraintTop_toTopOf="@+id/text_local_wifi_password" />
+
+    <TextView
+        android:id="@+id/text_local_wifi_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="本地wifi信道："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/text_local_wifi_password"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_local_wifi_password"
+        app:layout_constraintTop_toBottomOf="@+id/text_local_wifi_password"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/text_local_wifi_channel_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#111010"
+        android:textSize="20sp"
+        android:background="@drawable/text_circle"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="@+id/text_local_wifi_channel"
+        app:layout_constraintEnd_toEndOf="@+id/text_local_wifi_password_data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_local_wifi_password_data"
+        app:layout_constraintTop_toTopOf="@+id/text_local_wifi_channel" />
+
+    <TextView
+        android:id="@+id/text_air_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="云ip地址："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/text_local_wifi_channel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_local_wifi_channel"
+        app:layout_constraintTop_toBottomOf="@+id/text_local_wifi_channel"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/text_air_ip_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#111010"
+        android:textSize="20sp"
+        android:selectAllOnFocus="true"
+        android:background="@drawable/text_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/text_air_ip"
+        app:layout_constraintEnd_toEndOf="@+id/text_local_wifi_channel_data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_local_wifi_channel_data"
+        app:layout_constraintTop_toTopOf="@+id/text_air_ip" />
+
+    <TextView
+        android:id="@+id/text_air_port1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="云端口号1："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/text_air_ip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_air_ip"
+        app:layout_constraintTop_toBottomOf="@+id/text_air_ip"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/text_air_port1_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="3021"
+        android:selectAllOnFocus="true"
+        android:textColor="#111010"
+        android:textSize="20sp"
+        android:background="@drawable/text_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/text_air_port1"
+        app:layout_constraintEnd_toEndOf="@+id/text_air_ip_data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_air_ip_data"
+        app:layout_constraintTop_toTopOf="@+id/text_air_port1" />
+
+
+    <TextView
+        android:id="@+id/text_air_port2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="云端口号2："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/text_air_port1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_air_port1"
+        app:layout_constraintTop_toBottomOf="@+id/text_air_port1"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/text_air_port2_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="3022"
+        android:selectAllOnFocus="true"
+        android:textColor="#111010"
+        android:textSize="20sp"
+        android:background="@drawable/text_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/text_air_port2"
+        app:layout_constraintEnd_toEndOf="@+id/text_air_port1_data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_air_port1_data"
+        app:layout_constraintTop_toTopOf="@+id/text_air_port2" />
+
+    <TextView
+        android:id="@+id/text_router_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="路由wifi名称："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/text_air_port2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_air_port2"
+        app:layout_constraintTop_toBottomOf="@+id/text_air_port2"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/text_router_wifi_name_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:selectAllOnFocus="true"
+        android:textColor="#111010"
+        android:textSize="20sp"
+        android:background="@drawable/text_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/text_router_wifi_name"
+        app:layout_constraintEnd_toEndOf="@+id/text_air_port2_data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_air_port2_data"
+        app:layout_constraintTop_toTopOf="@+id/text_router_wifi_name" />
+
+    <TextView
+        android:id="@+id/text_router_wifi_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="路由wifi密码："
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/text_router_wifi_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_router_wifi_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_router_wifi_name"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <EditText
+        android:id="@+id/text_router_wifi_password_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:selectAllOnFocus="true"
+        android:textColor="#111010"
+        android:textSize="20sp"
+        android:background="@drawable/text_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/text_router_wifi_password"
+        app:layout_constraintEnd_toEndOf="@+id/text_router_wifi_name_data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_router_wifi_name_data"
+        app:layout_constraintTop_toTopOf="@+id/text_router_wifi_password" />
+
+    <Button
+        android:id="@+id/button_con_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_circle"
+        android:gravity="center"
+        android:text="刷新"
+        android:textColor="@color/ColorText"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/connect_view"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/connect_view"
+        app:layout_constraintTop_toTopOf="@+id/connect_view"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <Button
+        android:id="@+id/button_con_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_circle"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/ColorText"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/connect_view"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/connect_view"
+        app:layout_constraintTop_toTopOf="@+id/connect_view"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <Button
+        android:id="@+id/button_con_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_circle"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/ColorText"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/connect_view"
+        app:layout_constraintEnd_toEndOf="@+id/connect_view"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/connect_view"
+        app:layout_constraintTop_toTopOf="@+id/connect_view"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="【该页面仅在本地模式下有效】"
+        android:textColor="#000000"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_con_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

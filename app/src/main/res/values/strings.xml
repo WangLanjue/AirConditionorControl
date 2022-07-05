@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">智能新风系统</string>
+    <string name="room_name">房间信息</string>
+    <string name="data_name">参数设置</string>
+    <string name="con_name">连接设置</string>
+    <string name="sys_name">系统</string>
+    <string name="user_name">我的</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">智能新风系统</string>
+    <string name="nav_header_subtitle">user</string>
+    <string name="nav_header_desc">12345678</string>
+    <string name="action_settings">设置IP</string>
+    <string name="action_settings_room">房间保存</string>
+    <string name="action_settings_mode">切换模式</string>
+    <string name="action_settings_installationid">设置设备ID</string>
+
+    <string name="textView_wind_mode">自动</string>
+    <string name="textView_wind_data">0挡</string>
+
+    <string name="menu_home">房间信息</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_data_setting">参数设置</string>
+    <string name="menu_con_setting">连接设置</string>
+    <string name="menu_system_setting">系统</string>
+    <string name="menu_user_setting">我的</string>
+
+    <string name="button_room_1">房间一</string>
+    <string name="button_room_2">房间二</string>
+    <string name="button_room_3">房间三</string>
+    <string name="button_room_4">房间四</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_room">RoomActivity</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_register">注册</string>
+    <string name="prompt_email">    用户昵称</string>
+    <string name="prompt_password">    密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">无效的昵称</string>
+    <string name="invalid_password">密码长度需大于5位</string>
+    <string name="login_failed">"登录失败"</string>
+
+</resources>
